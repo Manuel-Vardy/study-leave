@@ -675,15 +675,23 @@
         <!-- Important Notes for Teachers -->
         <section class="bg-white py-20 border-t border-gray-100 fade-in-section">
             <div class="container mx-auto px-6 lg:px-12">
-                <div class="bg-white border border-gray-100 shadow-sm overflow-hidden p-6 md:p-10 lg:p-16 rounded-3xl">
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
-                        <!-- Text content -->
-                        <div class="lg:w-1/2 order-2 lg:order-1">
-                            <div class="flex items-center gap-4 mb-10 w-full">
-                                <h3 class="text-xl md:text-2xl font-bold text-darkRed uppercase tracking-wide shrink-0">
-                                    Important Notes for Teachers:
+                <div class="bg-white border border-gray-100 shadow-sm overflow-hidden rounded-3xl">
+                    <div class="flex flex-col lg:flex-row gap-0 lg:gap-16">
+                        <!-- Image now comes first on mobile (order-1) -->
+                        <div class="lg:w-1/2 order-1 lg:order-2">
+                            <div class="relative group h-[300px] md:h-[500px] w-full overflow-hidden">
+                                <img src="image/working-computer.jpg" alt="Important Notes"
+                                    class="rounded-t-3xl lg:rounded-none lg:rounded-r-3xl w-full object-cover h-[300px] md:h-[500px] hover:grayscale transition-all duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Text content below on mobile (order-2) -->
+                        <div class="lg:w-1/2 order-2 lg:order-1 p-6 md:p-10 lg:p-16">
+                            <div class="flex items-center gap-4 mb-8 w-full">
+                                <h3 class="text-xl md:text-2xl font-bold text-darkRed uppercase tracking-wide">
+                                    Important Notes <br class="hidden md:block"/> for Teachers:
                                 </h3>
-                                <div class="h-px bg-darkRed flex-grow"></div>
+                                <div class="hidden md:block h-px bg-darkRed flex-grow"></div>
                             </div>
 
                             <ul class="space-y-5">
@@ -724,13 +732,6 @@
                                             teaching</strong> until officially released.</span>
                                 </li>
                             </ul>
-                        </div>
-                        <!-- Image -->
-                        <div class="lg:w-1/2 order-1 lg:order-2">
-                            <div class="relative group h-[300px] md:h-[500px] overflow-hidden">
-                                <img src="image/working-computer.jpg" alt="Important Notes"
-                                    class="rounded-2xl w-full object-cover h-[300px] md:h-[500px] hover:grayscale transition-all duration-500">
-                            </div>
                         </div>
                     </div>
                 </div>
